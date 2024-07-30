@@ -45,9 +45,9 @@ public class Main {
         System.out.println("За 20 минут машина произвела " + glass20Minute + " штук бутылок");
         short glass24Hours = (short) (glass * 24 * 60 / 2);
         System.out.println("За 24 часа машина произвела " + glass24Hours + " штук бутылок");
-        int glass3Days = (int) (glass * 24 * 3 * 60 / 2);
+        int glass3Days = glass * 24 * 3 * 60 / 2;
         System.out.println("За 3 дня машина произвела " + glass3Days + " штук бутылок");
-        int glass30Days = (int) (glass * 24 * 30 * 60 / 2);
+        int glass30Days = glass * 24 * 30 * 60 / 2;
         System.out.println("За 1 месяц машина произвела " + glass30Days + " штук бутылок");
 
         System.out.println("Задача 5");
