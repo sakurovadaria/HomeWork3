@@ -51,5 +51,14 @@ public class Main {
         System.out.println("За 1 месяц машина произвела " + glass30Days + " штук бутылок");
 
         System.out.println("Задача 5");
+        byte bank = 120;
+        byte whiteBankOneClass = 2;
+        byte brownBankOneClass = 4;
+        byte allClass = (byte) (bank / (whiteBankOneClass + brownBankOneClass));
+        byte allWhiteBank = (byte) (allClass * whiteBankOneClass);
+        byte allBrownBank = (byte) (allClass * brownBankOneClass);
+        System.out.println("В школе, где " + allClass + " классов, нужно " + allWhiteBank + " банок белой краски и " + allBrownBank + " банок коричневой краски.");
+
+
     }
 }
