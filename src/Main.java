@@ -59,6 +59,51 @@ public class Main {
         byte allBrownBank = (byte) (allClass * brownBankOneClass);
         System.out.println("В школе, где " + allClass + " классов, нужно " + allWhiteBank + " банок белой краски и " + allBrownBank + " банок коричневой краски.");
 
+        System.out.println("Задача 6");
+        byte banana = 5;
+        short milkMl = 200;
+        byte iceCream = 2;
+        byte eggs = 4;
+        short bananaMass = 5 * 80;
+        short milkMlMass = 2 * 105;
+        short iceCreamMass = 2 * 100;
+        short eggsMass = 4 * 70;
+        short allMassGrams = (short) (bananaMass + milkMlMass + iceCreamMass + eggsMass);
+        float allMassKilogram = allMassGrams / 1000f;
+        System.out.println("Масса завтрака в граммах составляет " + allMassGrams + " грамм, а  в килограммах " + allMassKilogram + " килограмм.");
 
+        System.out.println("Задача 7");
+        byte goal = 7;
+        short min = 250;
+        short max = 500;
+        short goalGrams = 7 * 1000;
+        short daysMax = (short) (goalGrams / min);
+        short daysMin = (short) (goalGrams / max);
+        int averageDays = (daysMax + daysMin) / 2;
+        System.out.println("Если каждый день терять по 250 грамм, потребуется " + daysMax + " дней, если терять по 500 грам, то потребуется " + daysMin + " дней.");
+        System.out.println("В среднем, потребуется " + averageDays +  " дней.");
+
+        System.out.println("Задача 8");
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        int mashaEars = masha * 12;
+        int denisEars = denis * 12;
+        int kristinaEars = kristina * 12;
+        float mashaIncrease = masha / 100f * 10f;
+        float mashaMonth = masha + mashaIncrease;
+        float mashaIncreaseEars = (masha + mashaIncrease) * 12;
+        float mashaDifferenceEars = mashaIncreaseEars - mashaEars;
+        System.out.println("Маша теперь получает " + mashaMonth +  " рублей. Годовой доход вырос на " + mashaDifferenceEars + " рублей.");
+        float denisIncrease = denis / 100f * 10f;
+        float denisMonth = denis + denisIncrease;
+        float denisIncreaseEars = (denis + denisIncrease) * 12;
+        float denisDifferenceEars = denisIncreaseEars - denisEars;
+        System.out.println("Денис теперь получает " + denisMonth +  " рублей. Годовой доход вырос на " + denisDifferenceEars + " рублей.");
+        float kristinaIncrease = kristina / 100f * 10f;
+        float kristinaMonth = kristina + kristinaIncrease;
+        float kristinaIncreaseEars = (kristina + kristinaIncrease) * 12;
+        float kristinaDifferenceEars = kristinaIncreaseEars - kristinaEars;
+        System.out.println("Кристина теперь получает " + kristinaMonth +  " рублей. Годовой доход вырос на " + kristinaDifferenceEars + " рублей.");
     }
 }
